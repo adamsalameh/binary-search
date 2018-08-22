@@ -21,7 +21,7 @@ function binary($array, $number){
         
         //echo $mid." ".$array[$mid]." ".$number;
         return $mid;
-        break;
+        
     }else
     if ($number < $array[$mid]){
        // echo $mid."\n";
