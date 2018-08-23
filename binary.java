@@ -8,7 +8,7 @@ class Rextester
 {  
     public static int binarySearch(int[] array, int num){
         int min = 0;
-        int max = array.length;
+        int max = array.length-1;
         int mid = (min + max)/2;
         
         while(max >= min){
@@ -22,14 +22,13 @@ class Rextester
                 
             }else if (num > array[mid]){
                min = mid +1;
-               mid = (min + max)/2;
-                
-            }
-            
+               mid = (min + max)/2;                
+            }          
             
         }
         return -1;
     }
+    
     public static void main(String args[])
     {
         //             0  1  2  3   4   5   6   7   8   9  10  11  12  13/ 14  15/ 16  17  18/ 19  20  21/ 22  23/ 24
